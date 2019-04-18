@@ -9,7 +9,7 @@ if ((float)PCRE_VERSION<7.9)
 
 // Load configuration
 $f3->config('config.ini');
-$f3->set("AUTOLOAD", "handlers/;");
+$f3->set("AUTOLOAD", "handlers/;models/;");
 
 $f3->route('GET /', 'homeController->home');
 
